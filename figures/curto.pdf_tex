@@ -1,0 +1,69 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'curto.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{550.44202258bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.38246241)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{curto.pdf}}%
+    \put(-0.00157691,0.36325612){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Fabry-P\'erot}}}}}%
+    \put(0.22541706,0.36453137){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Whispering Gallery }}}}}%
+    \put(0.55130929,0.36289741){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Photonic Crystal }}}}}%
+    \put(0.85226759,0.36417268){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Nanoantenna}}}}}%
+    \put(0.00291397,0.03229553){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{Q   2000}}}}%
+    \put(0.00095336,0.33483635){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Microcavity}}}}}%
+    \put(0.59787044,0.33483635){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Cavity}}}}}%
+    \put(0.2671562,0.33483635){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{\textit{Resonator}}}}}%
+    \put(0.00554829,0.00055955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{V     5}}}}%
+    \put(0.25413768,0.03229553){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{Q   10000}}}}%
+    \put(0.256772,0.00055955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{V     5}}}}%
+    \put(0.5920782,0.03229553){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{Q   15000}}}}%
+    \put(0.59471252,0.00055955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{V     5}}}}%
+    \put(0.87518308,0.03229553){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{Q   100}}}}%
+    \put(0.87781735,0.00055955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{V  .002}}}}%
+  \end{picture}%
+\endgroup%
