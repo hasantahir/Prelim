@@ -200,25 +200,34 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
   % ------------------------------------------------------------
   % ------------------------------------------------------------
   \begin{frame}
-    \frametitle{Proposed Scheme}
-    \framesubtitle{Thin Flat Sheet $TM_z$}
-        \begin{equation} \nonumber
-          \hat{\v n} \x (\v E_1 - \v E_2) = \v 0
-          \label{eq:E1bc}
-        \end{equation}
-        \begin{align} \nonumber
-          E_i ={}& \frac{\O}{4} \int\limits_L J_z(x') \left[ H_0^{(2)}(k_1 | x -  x'|) + H_0^{(2)}(k_2 |x - x'|)\right] \diff{x'}  \notag
-          \label{eq:scalarE}
-        \end{align}
-        \begin{equation} \nonumber
-          \hat{\v n} \x (\v H_1 - \v H_2) = \v 0
-          \label{eq:E1bc}
-        \end{equation}
-        \begin{align} \nonumber
-          H_i^{tan} &= \frac{-j \O}{4} \int\limits_L M_x(x') \left[ \E_1 H_0^{(2)}(k_1 |x - x'|) + \E_1 H_2^{(2)}(k_1 |x - x'|) \right. \notag\\
-          & \left. + \E_2 H_0^{(2)}(k_2 |x - x'|) + \E_2 H_2^{(2)}(k_2 |x - x'|)\right] \diff{x'} \notag
-          \label{eq:scalarH}
-        \end{align}
+    \frametitle{Field Computation}
+    \framesubtitle{Layered media}
+    \begin{columns} % align columns
+      \begin{column}[T]{.5\textwidth}
+        \begin{itemize}
+          \item Difficulty in simulation of thin objects
+          \item Dense mesh
+          \item Computationally expensive
+          \item No guarantee of correct solution
+        \end{itemize}
+        \begin{subequations}
+          \begin{align}
+            \v{\ti E}(\v{r}) = <{\ti {\tns G}}^{EJ} ; \v{\ti J}(\v{r'})>
+            \label{eq:E_GJ}\\
+            \v{\ti H}(\v{r}) = <{\ti {\tns G}}^{HJ} ; \v{\ti J}(\v{r'})>
+          \end{align}
+          \label{eq:EH_GJ}
+        \end{subequations}
+      \end{column}
+      \begin{column}[T]{.5\textwidth}
+        \begin{figure}[!t]
+           \noindent
+           \includegraphics[width=1\textwidth]{figures/mesh.png}
+           \caption{Typical mesh for a dielectric plate of thickness $.05 \u m$}
+           \label{fig:mesh}
+        \end{figure}
+        \end{column}%
+      \end{columns}
     \end{frame}
     % ------------------------------------------------------------
     % ------------------------------------------------------------
@@ -227,6 +236,35 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
     % ------------------------------------------------------------
     % ------------------------------------------------------------
     % ------------------------------------------------------------
+    \begin{frame}
+      \frametitle{Field Computation}
+      \framesubtitle{Integral Equations}
+      \begin{columns} % align columns
+        \begin{column}[T]{.5\textwidth}
+          \begin{itemize}
+            \item Difficulty in simulation of thin objects
+            \item Dense mesh
+            \item Computationally expensive
+            \item No guarantee of correct solution
+          \end{itemize}
+        \end{column}
+        \begin{column}[T]{.5\textwidth}
+          \begin{figure}[!t]
+             \noindent
+             \includegraphics[width=1\textwidth]{figures/mesh.png}
+             \caption{Typical mesh for a dielectric plate of thickness $.05 \u m$}
+             \label{fig:mesh}
+          \end{figure}
+          \end{column}%
+        \end{columns}
+      \end{frame}
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
+      % ------------------------------------------------------------
     \begin{frame}
       \frametitle{Proposed Scheme}
       \framesubtitle{Method of moments}
@@ -257,20 +295,6 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
       \label{eq:far-field}
     \end{equation}
     \end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   % ------------------------------------------------------------
   % ------------------------------------------------------------
   % ------------------------------------------------------------
@@ -288,7 +312,7 @@ bottom color=blue!50!black!20, draw=blue!40!black!60, very thick, text centered,
           \label{eq:conditions}
         \end{equation}
         \begin{itemize}
-          \item Criterion met at terahertz frequency range
+          \item Criterion met at terahertz frequency ra nge
           \item Opposite signs of dielectric constant at Semiconductor interface
           \item GaAs/AlGaAs semiconductor heterostructures
           \item Strontium Titanate/Lanthanum Aluminate (STO/LAO) oxide interfaces
